@@ -1,3 +1,107 @@
-body {
-    background-color:red;
+@import 'reset';
+@import 'variables';
+@import 'fonts';
+
+body * {
+    box-sizing: border-box; 
+}
+
+.header { 
+    background-image: url('../img/header-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    padding: 40px 70px 150px 50px;
+    position: relative;
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .wrapper {
+        display: flex;
+    }
+
+    &-description {
+        margin-left: 13px;
+    }
+
+    &-text {
+        font-family: 'avenir-next', sans-serif;
+        font-size: 24px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &-line {
+        margin-top: 1px;
+        width: 38px;
+        height: 3px;
+        background-color: #a2ca28;
+    }
+    
+    &-link {
+        display: inline-block;
+        font-family: 'avenir-next', sans-serif;
+        font-size: 13px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    &-link:hover {
+        color: #ebebeb;
+    }
+
+    &-link:active {
+        color: #c9c9c9;
+    }
+
+    &-link:not(:last-child) {
+        margin-right: 65px;
+    }
+
+    &-bottom {
+        margin-top: 349px;
+        margin-left: 65px;
+    }
+
+    &-title {
+        font-family: 'avenir-next', sans-serif;
+        font-size: 40px;
+        color: #fff;
+        text-transform: uppercase;
+
+        span {
+            color: #a2ca28;
+        }
+    }
+
+    &-subtitle {
+        margin-top: 13px;
+        margin-left: 165px;
+        font-family: 'avenir-next', sans-serif;
+        font-size: 15px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        span {
+            color: #fd634e;
+        }
+    }
+
+    // &-figure {
+    //     position: absolute;
+    //     border: 65px solid transparent;
+    //     border-right: 1346px solid green;
+    //     border-bottom: 45px solid green;
+    //     bottom: 0;
+    //     left: -62px;
+    // }
 }
