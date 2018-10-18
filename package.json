@@ -1,0 +1,24 @@
+{
+  "name": "landing-fitness",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsergeysobolit/Landing-fitness.git"
+  },
+  "author": "Serhii Sobol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsergeysobolit/Landing-fitness/issues"
+  },
+  "homepage": "https://github.com/itsergeysobolit/Landing-fitness#readme"
+}
