@@ -55,6 +55,27 @@ table {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'proxima-nova';
+  src: url("../fonts/proxima-nova/proxima-nova.woff") format("woff"), url("../fonts/proxima-nova/proxima-nova.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url("../fonts/montserrat/montserrat.woff") format("woff"), url("../fonts/montserrat/montserrat.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: url("../fonts/open-sans/open-sans.woff") format("woff"), url("../fonts/open-sans/open-sans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body * {
   box-sizing: border-box;
 }
@@ -72,6 +93,7 @@ body * {
   max-width: 100%;
   padding: 40px 70px 150px 50px;
   position: relative;
+  height: 100%;
 }
 
 .header-top {
@@ -157,16 +179,106 @@ body * {
 
 .features {
   background-color: #a2ca28;
-  height: 500px;
-  padding: 110px;
+  padding: 60px 0 35px 0;
+}
+
+.features-block {
+  display: flex;
+  align-items: center;
+}
+
+.features .wrapper:not(first-child) {
+  margin-right: 40px;
+}
+
+.features .wrapper:nth-child(3) h2 {
+  margin-top: 31px;
 }
 
 .features-title {
+  margin-top: 23px;
   font-size: 24px;
-  font-family: sans-serif;
-  color: #0a1f3f;
+  font-family: 'proxima-nova', sans-serif;
+  color: #fff;
 }
 
 .features-description {
-  color: #8297a7;
+  font-family: 'proxima-nova', sans-serif;
+  margin-top: 32px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.features-link {
+  display: block;
+  margin-top: 28px;
+  font-family: 'proxima-nova', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.features-link::first-letter, .features-description::first-letter, .features-title::first-letter {
+  text-transform: uppercase;
+}
+
+.about {
+  background-color: #a2ca28;
+  padding: 85px 95px 0 95px;
+  display: grid;
+  grid-template-columns: 400px auto 400px;
+  grid-template-rows: 400px 400px;
+}
+
+.about-fitness {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 52px;
+}
+
+.about-subtitle {
+  color: #fd634e;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.about-title {
+  color: #a2ca28;
+  font-size: 35px;
+  font-weight: 300;
+  margin-top: 13px;
+  text-transform: uppercase;
+}
+
+.about-icon {
+  margin-top: 23px;
+}
+
+.about-description {
+  margin-top: 25px;
+  color: #656e74;
+  font-size: 14px;
+  text-align: center;
+}
+
+.about-link {
+  margin-top: 15px;
+  color: #a2ca28;
+  font-size: 14px;
+}
+
+.about-description::first-letter, .about-link::first-letter {
+  text-transform: uppercase;
+}
+
+.about-pic_1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.about-pic_2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }

@@ -19,6 +19,7 @@ body * {
     max-width: 100%;
     padding: 40px 70px 150px 50px;
     position: relative;
+    height: 100%;
 
     &-top {
         display: flex;
@@ -113,16 +114,109 @@ body * {
 
 .features {
     background-color: #a2ca28;
-    height: 500px;
-    padding: 110px;
+    padding: 60px 0 35px 0;
+
+    &-block {
+        display: flex;
+        align-items: center;
+    }
+
+    .wrapper:not(first-child) {
+        margin-right: 40px;
+    }
+
+    .wrapper:nth-child(3) h2 {
+        margin-top: 31px;
+    }
 
     &-title {
+        margin-top: 23px;
         font-size: 24px;
-        font-family: sans-serif;
-        color: #0a1f3f;
+        font-family: 'proxima-nova', sans-serif;
+        color: #fff;
+    }
+    
+    &-description {
+        font-family: 'proxima-nova', sans-serif;
+        margin-top: 32px;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    &-link {
+        display: block;
+        margin-top: 28px;
+        font-family: 'proxima-nova', sans-serif;
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    &-link::first-letter,
+    &-description::first-letter,
+    &-title::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+.about {
+    background-color: #a2ca28;
+    padding: 85px 95px 0 95px;
+    display: grid;
+    grid-template-columns: 400px auto 400px;
+    grid-template-rows: 400px 400px;
+
+    &-fitness {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 52px;
+    }
+
+    &-subtitle {
+        color: #fd634e;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    &-title {
+        color: #a2ca28;
+        font-size: 35px;
+        font-weight: 300;
+        margin-top: 13px;
+        text-transform: uppercase;
+    }
+
+    &-icon {
+        margin-top: 23px;
     }
 
     &-description {
-        color: #8297a7;
+        margin-top: 25px;
+        color: #656e74;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    &-link {
+        margin-top: 15px;
+        color: #a2ca28;
+        font-size: 14px;
+    }
+
+    &-description::first-letter,
+    &-link::first-letter {
+        text-transform: uppercase;
+    }
+
+    &-pic_1 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    &-pic_2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 }

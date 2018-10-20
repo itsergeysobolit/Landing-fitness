@@ -6,4 +6,28 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'proxima-nova';
+    src: url('../fonts/proxima-nova/proxima-nova.woff') format('woff'),
+         url('../fonts/proxima-nova/proxima-nova.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat/montserrat.woff') format('woff'),
+         url('../fonts/montserrat/montserrat.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url('../fonts/open-sans/open-sans.woff') format('woff'),
+         url('../fonts/open-sans/open-sans.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
