@@ -59,6 +59,11 @@ body * {
   box-sizing: border-box;
 }
 
+.container {
+  width: 1157px;
+  margin: 0 auto;
+}
+
 .header {
   background-image: url("../img/header-bg.jpg");
   background-position: center;
@@ -148,4 +153,20 @@ body * {
 
 .header-subtitle span {
   color: #fd634e;
+}
+
+.features {
+  background-color: #a2ca28;
+  height: 500px;
+  padding: 110px;
+}
+
+.features-title {
+  font-size: 24px;
+  font-family: sans-serif;
+  color: #0a1f3f;
+}
+
+.features-description {
+  color: #8297a7;
 }
