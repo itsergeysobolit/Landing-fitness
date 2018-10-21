@@ -250,9 +250,11 @@ body * {
   color: #fd634e;
   font-size: 14px;
   text-transform: uppercase;
+  font-family: 'montserrat', sans-serif;
 }
 
 .about-title {
+  font-family: "open-sans", sans-serif;
   color: #a2ca28;
   font-size: 35px;
   font-weight: 300;
@@ -265,6 +267,7 @@ body * {
 }
 
 .about-description {
+  font-family: "open-sans", sans-serif;
   margin-top: 25px;
   color: #656e74;
   font-size: 14px;
@@ -272,6 +275,7 @@ body * {
 }
 
 .about-link {
+  font-family: "open-sans", sans-serif;
   margin-top: 15px;
   color: #a2ca28;
   font-size: 14px;
@@ -336,7 +340,7 @@ body * {
 
 .banner-title {
   color: #fff;
-  font-family: 'open-sans', sans-serif;
+  font-family: "open-sans", sans-serif;
   font-size: 45px;
 }
 
@@ -347,7 +351,7 @@ body * {
 .banner-subtitle {
   margin-top: 25px;
   color: #fff;
-  font-family: 'open-sans', sans-serif;
+  font-family: "open-sans", sans-serif;
   font-size: 16px;
   padding-left: 370px;
   padding-right: 450px;
@@ -370,13 +374,13 @@ body * {
 .footer-title {
   color: #fff;
   font-size: 15px;
-  font-family: 'open-sans', sans-serif;
+  font-family: "open-sans", sans-serif;
 }
 
 .footer-description {
   color: #8297a7;
   font-size: 14px;
-  font-family: 'open-sans', sans-serif;
+  font-family: "open-sans", sans-serif;
   margin-top: 30px;
 }
 
