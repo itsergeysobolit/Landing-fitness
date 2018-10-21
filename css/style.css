@@ -410,13 +410,21 @@ body * {
 }
 
 .footer-forms .form {
-  border: 0;
+  border: 1px solid #0d1119;
   padding: 18px 109px 20px 22px;
   font-family: 'proxima-nova', sans-serif;
   font-size: 14px;
   color: #83969f;
   border-radius: 3px;
   margin-left: 3px;
+}
+
+.footer-forms .form:focus {
+  background-color: #f4fff2;
+}
+
+.footer-forms .form:hover {
+  border: 1px solid #c4ec4a;
 }
 
 .footer-forms .button {
@@ -428,4 +436,12 @@ body * {
   background-color: #a2ca28;
   margin-left: 6px;
   padding: 20px 40px 18px 32px;
+}
+
+.footer-forms .button:hover {
+  background-color: #c1e947;
+}
+
+.footer-forms .button:active {
+  background-color: #91b917;
 }
