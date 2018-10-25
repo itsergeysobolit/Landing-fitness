@@ -95,6 +95,7 @@ body * {
   padding: 40px 70px 150px 50px;
   position: relative;
   height: 100vh;
+  overflow: hidden;
 }
 
 .header-top {
