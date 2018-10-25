@@ -78,10 +78,11 @@ table {
 
 body * {
   box-sizing: border-box;
+  line-height: 1.5 !important;
 }
 
 .container {
-  width: 1157px;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -99,7 +100,6 @@ body * {
 .header-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .header .wrapper {
@@ -133,6 +133,7 @@ body * {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
+  transition: all .5s ease;
 }
 
 .header-link:hover {
@@ -148,8 +149,9 @@ body * {
 }
 
 .header-bottom {
-  margin-top: 349px;
-  margin-left: 65px;
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
 }
 
 .header-title {
@@ -177,22 +179,43 @@ body * {
   color: #fd634e;
 }
 
+.header-triag {
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  border: 73px solid transparent;
+  border-right: 1349px solid rgba(253, 99, 78, 0.3);
+  border-bottom: 27px solid rgba(253, 99, 78, 0.3);
+  width: 100%;
+  left: -73px;
+  bottom: 0;
+}
+
 .features {
   background-color: #a2ca28;
   padding: 60px 0 35px 0;
 }
 
+.features .wrapper {
+  width: 100%;
+  display: flex;
+}
+
 .features-block {
   display: flex;
-  align-items: center;
+  flex-basis: 25%;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
 }
 
-.features .wrapper:not(first-child) {
-  margin-right: 40px;
+.features-block:not(:first-child) {
+  margin-left: 40px;
 }
 
-.features .wrapper:nth-child(3) h2 {
-  margin-top: 31px;
+.features-icon {
+  width: 44px;
+  height: 44px;
 }
 
 .features-title {
@@ -200,6 +223,10 @@ body * {
   font-size: 24px;
   font-family: 'proxima-nova', sans-serif;
   color: #fff;
+}
+
+.features-title:nth-child(3) {
+  margin-top: 30px;
 }
 
 .features-description {
@@ -210,12 +237,18 @@ body * {
 }
 
 .features-link {
-  display: block;
-  margin-top: 28px;
   font-family: 'proxima-nova', sans-serif;
   color: #fff;
   font-size: 14px;
   text-decoration: none;
+  transition: all .5s ease;
+  position: absolute;
+  bottom: -20%;
+}
+
+.features-link:after {
+  content: '\2192';
+  margin-left: 5px;
 }
 
 .features-link:hover {
@@ -279,6 +312,7 @@ body * {
   margin-top: 15px;
   color: #a2ca28;
   font-size: 14px;
+  transition: all .5s ease;
 }
 
 .about-link:hover {
@@ -308,7 +342,7 @@ body * {
   padding: 0 95px;
   display: grid;
   grid-template-columns: 400px auto 400px;
-  grid-template-rows: 350px 310px 350px 310px;
+  grid-template-rows: 360px 310px 350px 310px;
 }
 
 .lifestyle-health {
@@ -318,6 +352,40 @@ body * {
 
 .lifestyle-block {
   background-color: #fff;
+  position: relative;
+  padding: 40px 60px 70px 40px;
+}
+
+.lifestyle-block .block-subtitle {
+  color: #fd634e;
+  font-family: 'montserrat', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.lifestyle-block .block-title {
+  font-size: 35px;
+  font-family: "open-sans", sans-serif;
+  color: #a2ca28;
+  text-transform: uppercase;
+  margin-top: 13px;
+}
+
+.lifestyle-block .block-icon {
+  position: absolute;
+  top: 57px;
+  right: 28px;
+}
+
+.lifestyle-block .block-description {
+  color: #656e74;
+  font-family: "open-sans", sans-serif;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.lifestyle-block-summer {
+  background-color: #a2ca28;
 }
 
 .banner {
@@ -417,6 +485,7 @@ body * {
   color: #83969f;
   border-radius: 3px;
   margin-left: 3px;
+  transition: all .5s ease;
 }
 
 .footer-forms .form:focus {
@@ -436,6 +505,7 @@ body * {
   background-color: #a2ca28;
   margin-left: 6px;
   padding: 20px 40px 18px 32px;
+  transition: all .5s ease;
 }
 
 .footer-forms .button:hover {

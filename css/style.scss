@@ -3,11 +3,12 @@
 @import 'fonts';
 
 body * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    line-height: 1.5 !important; 
 }
 
 .container {
-    width: 1157px;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -24,7 +25,6 @@ body * {
     &-top {
         display: flex;
         justify-content: space-between;
-        align-items: center;
     }
 
     .wrapper {
@@ -58,6 +58,7 @@ body * {
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 500;
+        transition: all .5s ease;
     }
 
     &-link:hover {
@@ -73,8 +74,9 @@ body * {
     }
 
     &-bottom {
-        margin-top: 349px;
-        margin-left: 65px;
+        position: absolute;
+        bottom: 20%;
+        left: 10%;
     }
 
     &-title {
@@ -93,7 +95,7 @@ body * {
         margin-left: 165px;
         font-family: 'avenir-next', sans-serif;
         font-size: 15px;
-        color: $white-color;;
+        color: $white-color;
         text-transform: uppercase;
         font-weight: 700;
 
@@ -102,54 +104,76 @@ body * {
         }
     }
 
-    // &-figure {
-    //     position: absolute;
-    //     border: 65px solid transparent;
-    //     border-right: 1346px solid green;
-    //     border-bottom: 45px solid green;
-    //     bottom: 0;
-    //     left: -62px;
-    // }
+    &-triag {
+        height: 100px;
+        overflow: hidden;
+        position: absolute;
+        border: 73px solid transparent; 
+        border-right: 1349px solid rgba(253, 99, 78, 0.3);;
+        border-bottom: 27px solid rgba(253, 99, 78, 0.3);;
+        width: 100%;
+        left: -73px;
+        bottom: 0;
+    }
 }
 
 .features {
     background-color: $main-color;
     padding: 60px 0 35px 0;
 
+    .wrapper {
+        width: 100%;
+        display: flex;
+    }
+
     &-block {
         display: flex;
-        align-items: center;
+        flex-basis: 25%;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
     }
 
-    .wrapper:not(first-child) {
-        margin-right: 40px;
+    &-block:not(:first-child) {
+        margin-left: 40px;
     }
 
-    .wrapper:nth-child(3) h2 {
-        margin-top: 31px;
+    &-icon {
+        width: 44px;
+        height: 44px;
     }
 
     &-title {
         margin-top: 23px;
         font-size: 24px;
         font-family: 'proxima-nova', sans-serif;
-        color: $white-color;;
+        color: $white-color;
+    }
+
+    &-title:nth-child(3) {
+        margin-top: 30px;
     }
     
     &-description {
         font-family: 'proxima-nova', sans-serif;
         margin-top: 32px;
-        color: $white-color;;
+        color: $white-color;
         font-size: $main-size;
     }
 
     &-link {
-        display: block;
-        margin-top: 28px;
         font-family: 'proxima-nova', sans-serif;
-        color: $white-color;;
+        color: $white-color;
         font-size: $main-size;
         text-decoration: none;
+        transition: all .5s ease;
+        position: absolute;
+        bottom: -20%;
+    }
+
+    &-link:after {
+        content: '\2192';
+        margin-left: 5px;
     }
 
     &-link:hover {
@@ -166,7 +190,6 @@ body * {
         text-transform: uppercase;
     }
 }
-
 .about {
     background-color: $main-color;
     padding: 85px 95px 0 95px;
@@ -215,6 +238,7 @@ body * {
         margin-top: 15px;
         color: $main-color;
         font-size: $main-size;
+        transition: all .5s ease;
     }
 
     &-link:hover {
@@ -246,7 +270,7 @@ body * {
     padding: 0 95px;
     display: grid;
     grid-template-columns: 400px auto 400px;
-    grid-template-rows: 350px 310px 350px 310px;
+    grid-template-rows: 360px 310px 350px 310px;
 
     &-health {
         grid-column-start: 2;
@@ -254,7 +278,41 @@ body * {
     }
 
     &-block {
-        background-color: $white-color;;
+        background-color: $white-color;
+        position: relative;
+        padding: 40px 60px 70px 40px;
+
+        .block-subtitle {
+            color: #fd634e;
+            font-family: 'montserrat', sans-serif;
+            font-size: $main-size;
+            text-transform: uppercase;
+        }
+
+        .block-title {
+            font-size: 35px;
+            font-family: $main-font-family;
+            color: $main-color;
+            text-transform: uppercase;
+            margin-top: 13px;
+        }
+
+        .block-icon {
+            position: absolute;
+            top: 57px;
+            right: 28px;
+        }
+
+        .block-description {
+            color: #656e74;
+            font-family: $main-font-family;
+            font-size: $main-size;
+            margin-top: 40px;
+        }
+
+        &-summer {
+            background-color: $main-color;
+        }
     }
 }
 
@@ -354,6 +412,7 @@ body * {
             color: #83969f;
             border-radius: 3px;
             margin-left: 3px;
+            transition: all .5s ease;
         }
 
         .form:focus {
@@ -373,6 +432,7 @@ body * {
             background-color: $main-color;
             margin-left: 6px;
             padding: 20px 40px 18px 32px;
+            transition: all .5s ease;
         }
 
         .button:hover {
