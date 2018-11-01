@@ -266,10 +266,13 @@ body * {
 
 .about {
   background-color: #a2ca28;
-  padding: 85px 95px 0 95px;
+  padding-top: 85px;
+}
+
+.about .wrapper {
   display: grid;
   grid-template-columns: 400px auto 400px;
-  grid-template-rows: 400px 400px;
+  grid-template-rows: 370px 370px;
 }
 
 .about-fitness {
@@ -328,14 +331,24 @@ body * {
   text-transform: uppercase;
 }
 
-.about-pic_1 {
+.about .fitness-girl {
   grid-column-start: 2;
   grid-column-end: 4;
 }
 
-.about-pic_2 {
+.about .fitness-girl img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.about .fitness-watch {
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+.about .fitness-watch img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .lifestyle {
