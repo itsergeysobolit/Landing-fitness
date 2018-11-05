@@ -334,72 +334,58 @@ body * {
 .about .fitness-girl {
   grid-column-start: 2;
   grid-column-end: 4;
+  position: relative;
 }
 
 .about .fitness-girl img {
   width: 100%;
   object-fit: cover;
+  height: 100%;
+}
+
+.about .text-girl {
+  display: flex;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  color: #f7614c;
+  font-family: "open-sans", sans-serif;
+  font-size: 12px;
+}
+
+.about .text-girl span {
+  color: #ffffff;
+}
+
+.about .text-girl .icon {
+  margin-left: 30px;
+  width: 50%;
 }
 
 .about .fitness-watch {
   grid-column-start: 1;
   grid-column-end: 3;
+  position: relative;
 }
 
 .about .fitness-watch img {
   width: 100%;
   object-fit: cover;
+  height: 100%;
+}
+
+.about .text-watch {
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
 }
 
 .lifestyle {
   background-color: #fd634e;
-  padding: 0 95px;
   display: grid;
   grid-template-columns: 400px auto 400px;
   grid-template-rows: 360px 310px 350px 310px;
-}
-
-.lifestyle-health {
-  grid-column-start: 2;
-  grid-column-end: 4;
-}
-
-.lifestyle-block {
-  background-color: #fff;
-  position: relative;
-  padding: 40px 60px 70px 40px;
-}
-
-.lifestyle-block .block-subtitle {
-  color: #fd634e;
-  font-family: 'montserrat', sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-.lifestyle-block .block-title {
-  font-size: 35px;
-  font-family: "open-sans", sans-serif;
-  color: #a2ca28;
-  text-transform: uppercase;
-  margin-top: 13px;
-}
-
-.lifestyle-block .block-icon {
-  position: absolute;
-  top: 57px;
-  right: 28px;
-}
-
-.lifestyle-block .block-description {
-  color: #656e74;
-  font-family: "open-sans", sans-serif;
-  font-size: 14px;
-  margin-top: 40px;
-}
-
-.lifestyle-block-summer {
-  background-color: #a2ca28;
 }
 
 .banner {
