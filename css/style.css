@@ -301,6 +301,8 @@ body * {
 
 .about-icon {
   margin-top: 23px;
+  width: 15px;
+  height: 23px;
 }
 
 .about-description {
@@ -351,15 +353,15 @@ body * {
   color: #f7614c;
   font-family: "open-sans", sans-serif;
   font-size: 12px;
+  align-items: center;
 }
 
 .about .text-girl span {
   color: #ffffff;
 }
 
-.about .text-girl .icon {
-  margin-left: 30px;
-  width: 50%;
+.about .text-girl .red-icon {
+  margin-left: 13px;
 }
 
 .about .fitness-watch {
@@ -376,59 +378,155 @@ body * {
 
 .about .text-watch {
   display: flex;
+  align-items: center;
   position: absolute;
   bottom: 10%;
   left: 10%;
+  font-family: "open-sans", sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+
+.about .text-watch .red-icon {
+  margin-left: 13px;
+}
+
+.about .text-watch .red-icon img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .lifestyle {
   background-color: #fd634e;
+}
+
+.lifestyle .container {
   display: grid;
-  grid-template-columns: 400px auto 400px;
-  grid-template-rows: 360px 310px 350px 310px;
+  grid-template-columns: 300px auto 300px;
+  grid-template-rows: 300px 300px 300px 300px;
+}
+
+.lifestyle .grid-1 img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.lifestyle .grid-2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.lifestyle .grid-2 img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.lifestyle .grid-3 {
+  background-color: #fff;
+}
+
+.lifestyle .grid-4 {
+  background-color: #a2ca28;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.lifestyle .grid-5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.lifestyle .grid-5 img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.lifestyle .grid-6 img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.lifestyle .grid-7 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #fff;
+}
+
+.lifestyle .grid-8 {
+  background-color: #a2ca28;
 }
 
 .banner {
   background-image: url("../img/banner-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  max-width: 100%;
-  height: 100vh;
+  background-position: top;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  padding-top: 20%;
+  color: #fff;
+  overflow: hidden;
 }
 
-.banner-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 240px;
+.banner-content {
   text-align: center;
 }
 
 .banner-title {
-  color: #fff;
   font-family: "open-sans", sans-serif;
   font-size: 45px;
 }
 
-.banner-title::first-letter {
-  text-transform: uppercase;
-}
-
 .banner-subtitle {
-  margin-top: 25px;
-  color: #fff;
+  width: 40%;
+  margin: 25px auto 0;
   font-family: "open-sans", sans-serif;
   font-size: 16px;
-  padding-left: 370px;
-  padding-right: 450px;
+}
+
+.banner .triang-1 {
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  margin: 0;
+  border-bottom: 10vh solid black;
+  border-left: 100vw solid transparent;
+}
+
+.banner .triang-2 {
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  margin: 0;
+  border-bottom: 10vh solid black;
+  border-right: 100vw solid transparent;
+}
+
+.triangle {
+  width: 100%;
+  height: 8%;
+  background-color: #000;
+  position: relative;
+}
+
+.triangle .red-line {
+  position: absolute;
+  bottom: 0;
+  border-bottom: 4vh solid #fd634e;
+  border-right: 75vw solid transparent;
 }
 
 .footer {
-  background-color: #0d1119;
-  padding-top: 65px;
-  height: 100vh;
+  margin: 0;
+  padding-top: 5%;
+  background-color: #000;
+  padding-bottom: 15%;
 }
 
 .footer-block {
@@ -465,6 +563,32 @@ body * {
 .footer-icons {
   display: flex;
   margin-top: 21px;
+}
+
+.footer-icons a {
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 12px;
+}
+
+.footer-icons .facebook-logo {
+  padding: 19px 26px 17px 26px;
+  background-color: #2e3192;
+}
+
+.footer-icons .twitter-logo {
+  padding: 21px 21px 17px 21px;
+  background-color: #00aeef;
+}
+
+.footer-icons .youtube-logo {
+  padding: 20px 21px 18px 21px;
+  background-color: #ed3123;
+}
+
+.footer-icons .linkedin-logo {
+  padding: 20px 23px 18px 24px;
+  background-color: #171a8f;
 }
 
 .footer-icons .img_view {
