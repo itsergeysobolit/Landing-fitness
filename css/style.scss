@@ -347,8 +347,34 @@ body * {
     .grid-2 {
         grid-column-start: 2;
         grid-column-end: 4;
+        position: relative;
 
-        img {
+        .wrapper {
+            position: absolute;
+            display: flex;
+            padding: 5% 5% 0;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .view {
+            display: flex;
+            align-items: center;
+
+            .icon {
+                margin-left: 10px;
+                height: 19px;
+            }
+        }
+
+        .text {
+            font-family: 'montserrat', sans-serif;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: $main-size;
+        }
+
+        .picture {
             width: 100%;
             object-fit: cover;
             height: 100%;
@@ -357,12 +383,63 @@ body * {
 
     .grid-3 {
         background-color: #fff;
+
+        .wrapper {
+            position: relative;
+            padding-top: 15%;
+            padding-left: 10%;
+        }
+
+        .subtitle {
+            font-family: 'montserrat', sans-serif;
+            font-size: $main-size;
+            text-transform: uppercase;
+            color: #fd634e;
+        }
+
+        .title {
+            font-family: $main-font-family;
+            font-size: 35px;
+            text-transform: uppercase;
+            color: $main-color;
+        }
+
+        .description {
+            width: 90%;
+            margin-top: 20px;
+            font-family: $main-font-family;
+            font-size: $main-size;
+            color: #656e74;
+        }
+
+        .icon {
+            position: absolute;
+            right: 5%;
+            top: 25%;
+        }
     }
 
     .grid-4 {
         background-color: $main-color;
         grid-column-start: 2;
         grid-column-end: 4;
+
+        .wrapper {
+            padding: 5% 5% 0;
+            font-family: $main-font-family;
+            color: #ffffff;
+        }
+
+        .title {
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+        .description {
+            width: 85%;
+            margin-top: 35px;
+            font-size: 13px;
+        }
     }
 
     .grid-5 {
@@ -389,10 +466,76 @@ body * {
         grid-column-start: 1;
         grid-column-end: 3;
         background-color: #fff;
+
+        .wrapper {
+            position: relative;
+            padding-top: 7%;
+            padding-left: 5%;
+        }
+
+        .subtitle {
+            font-family: 'montserrat', sans-serif;
+            font-size: $main-size;
+            text-transform: uppercase;
+            color: #fd634e;
+        }
+
+        .title {
+            font-family: $main-font-family;
+            font-size: 35px;
+            text-transform: uppercase;
+            color: $main-color;
+        }
+
+        .description {
+            width: 81%;
+            margin-top: 20px;
+            font-family: $main-font-family;
+            font-size: $main-size;
+            color: #656e74;
+        }
+
+        .icon {
+            position: absolute;
+            right: 5%;
+            top: 25%;
+        }
     }
 
     .grid-8 {
         background-color: $main-color;
+
+        .wrapper {
+            position: relative;
+            padding-top: 15%;
+            padding-left: 5%;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            font-family: 'montserrat', sans-serif;
+            font-size: $main-size;
+            text-transform: uppercase;
+        }
+
+        .title {
+            font-family: $main-font-family;
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+
+        .description {
+            width: 81%;
+            margin-top: 20px;
+            font-family: $main-font-family;
+            font-size: $main-size;
+        }
+
+        .icon {
+            position: absolute;
+            right: 8%;
+            top: 20%;
+        }
     }
 }
 
@@ -503,26 +646,43 @@ body * {
             border-radius: 50%;
             text-align: center;
             margin-right: 12px;
+            transition: .5s all ease;
         }
 
         .facebook-logo {
             padding: 19px 26px 17px 26px;
             background-color: #2e3192;
+
+            &:hover {
+                background-color: #4549cc;
+            }
         }
 
         .twitter-logo {
             padding: 21px 21px 17px 21px;
             background-color: #00aeef;
+
+            &:hover {
+                background-color: #4549cc;
+            }
         }
 
         .youtube-logo {
             padding: 20px 21px 18px 21px;
             background-color: #ed3123;
+
+            &:hover {
+                background-color: #f15347;
+            }
         }
 
         .linkedin-logo {
             padding: 20px 23px 18px 24px;
             background-color: #171a8f;
+
+            &:hover {
+                background-color: #5f64f1;
+            }
         }
 
         .img_view {

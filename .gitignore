@@ -1,4 +1,4 @@
-**/Technical task/
-**/node_modules/
-**/.vscode/
+/Technical task/
+/node_modules/
+/.vscode/
 package-lock.json
