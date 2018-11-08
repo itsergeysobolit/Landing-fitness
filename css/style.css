@@ -78,7 +78,7 @@ table {
 
 body * {
   box-sizing: border-box;
-  line-height: 1.5 !important;
+  line-height: 1.4 !important;
 }
 
 .container {
@@ -91,8 +91,9 @@ body * {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   max-width: 100%;
-  padding: 40px 70px 150px 50px;
+  padding: 5% 5% 0;
   position: relative;
   height: 100vh;
   overflow: hidden;
@@ -456,8 +457,8 @@ body * {
 
 .lifestyle .grid-3 .wrapper {
   position: relative;
-  padding-top: 15%;
-  padding-left: 10%;
+  padding-top: 10%;
+  padding-left: 5%;
 }
 
 .lifestyle .grid-3 .subtitle {
@@ -565,7 +566,7 @@ body * {
 .lifestyle .grid-7 .icon {
   position: absolute;
   right: 5%;
-  top: 25%;
+  top: 15%;
 }
 
 .lifestyle .grid-8 {
@@ -574,7 +575,7 @@ body * {
 
 .lifestyle .grid-8 .wrapper {
   position: relative;
-  padding-top: 15%;
+  padding-top: 7%;
   padding-left: 5%;
   color: #ffffff;
 }
@@ -600,7 +601,7 @@ body * {
 
 .lifestyle .grid-8 .icon {
   position: absolute;
-  right: 8%;
+  right: 5%;
   top: 20%;
 }
 
@@ -672,11 +673,16 @@ body * {
   padding-bottom: 15%;
 }
 
-.footer-block {
+.footer .wrapper {
+  width: 100%;
   display: flex;
 }
 
-.footer-info {
+.footer-block {
+  flex-basis: 33%;
+}
+
+.footer-block:nth-child(2) {
   margin-left: 50px;
 }
 
@@ -698,6 +704,7 @@ body * {
 }
 
 .footer-social {
+  flex-basis: 34%;
   margin-left: 40px;
   display: flex;
   flex-direction: column;
@@ -706,12 +713,14 @@ body * {
 .footer-icons {
   display: flex;
   margin-top: 21px;
+  justify-content: space-around;
 }
 
 .footer-icons a {
   border-radius: 50%;
   text-align: center;
-  margin-right: 12px;
+  margin-right: 6px;
+  margin-left: 6px;
   transition: .5s all ease;
 }
 
@@ -798,4 +807,327 @@ body * {
 
 .footer-forms .button:active {
   background-color: #91b917;
+}
+
+@media only screen and (min-width: 942px) and (max-width: 1200px) {
+  .features .wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .features-block {
+    flex-basis: 40%;
+  }
+  .features-block:nth-child(3), .features-block:nth-child(4) {
+    margin-top: 80px;
+  }
+  .features-block:nth-child(3) {
+    margin-left: 0;
+  }
+  .lifestyle .grid-7 .title {
+    width: 80%;
+  }
+  .lifestyle .grid-7 .description {
+    margin-top: 0;
+  }
+  .banner-subtitle {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 941px) {
+  .features .wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .features-block {
+    flex-basis: 40%;
+  }
+  .features-block:nth-child(3), .features-block:nth-child(4) {
+    margin-top: 80px;
+  }
+  .features-block:nth-child(3) {
+    margin-left: 0;
+  }
+  .about .container {
+    width: 100%;
+  }
+  .lifestyle .container {
+    width: 100%;
+  }
+  .lifestyle .grid-7 .title {
+    width: 80%;
+  }
+  .lifestyle .grid-7 .description {
+    margin-top: 0;
+  }
+  .banner-subtitle {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 849px) {
+  .header-link:not(:last-child) {
+    margin-right: 50px;
+  }
+  .features .wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .features-block {
+    flex-basis: 40%;
+  }
+  .features-block:nth-child(3), .features-block:nth-child(4) {
+    margin-top: 80px;
+  }
+  .features-block:nth-child(3) {
+    margin-left: 0;
+  }
+  .about .container {
+    width: 100%;
+  }
+  .about .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about .fitness-watch {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .lifestyle .container {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .lifestyle .grid-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .lifestyle .grid-4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .lifestyle .grid-5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .lifestyle .grid-6 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .lifestyle .grid-7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .lifestyle .grid-7 .title {
+    width: 80%;
+    font-size: 30px;
+  }
+  .lifestyle .grid-7 .description {
+    margin-top: 0;
+  }
+  .banner-subtitle {
+    width: 70%;
+  }
+  .footer .wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-social {
+    margin-top: 45px;
+    text-align: center;
+  }
+  .footer-forms {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .footer-forms fieldset {
+    width: 100%;
+  }
+  .footer-forms .form {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .footer-forms .button {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .header {
+    text-align: center;
+  }
+  .header-top {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header-menu {
+    margin-top: 10%;
+  }
+  .header-link {
+    width: 100%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+  }
+  .header-subtitle {
+    margin-left: 0;
+  }
+  .header-bottom {
+    left: 0%;
+  }
+  .features .wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .features-block {
+    flex-basis: 75%;
+    align-items: center;
+  }
+  .features-block:nth-child(2), .features-block:nth-child(3), .features-block:nth-child(4) {
+    margin-top: 80px;
+  }
+  .features-block:nth-child(2), .features-block:nth-child(3), .features-block:nth-child(4) {
+    margin-left: 0;
+  }
+  .about .container {
+    width: 100%;
+  }
+  .about .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 370px 370px 370px 370px;
+  }
+  .about .fitness-girl {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .about .fitness-watch {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .about-fitness {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding: 10%;
+  }
+  .about .grid-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .lifestyle .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    text-align: center;
+  }
+  .lifestyle .wrapper .description {
+    width: 100%;
+  }
+  .lifestyle .wrapper .icon {
+    display: none;
+  }
+  .lifestyle .grid-1 {
+    display: none;
+  }
+  .lifestyle .grid-2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .lifestyle .grid-3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .lifestyle .grid-3 .wrapper {
+    padding-top: 0;
+    padding-left: 0;
+    padding: 15% 5% 0;
+  }
+  .lifestyle .grid-4 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .lifestyle .grid-4 .wrapper {
+    padding: 20% 5% 0;
+  }
+  .lifestyle .grid-4 .title {
+    font-size: 25px;
+  }
+  .lifestyle .grid-5 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .lifestyle .grid-6 {
+    display: none;
+  }
+  .lifestyle .grid-7 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .lifestyle .grid-7 .wrapper {
+    padding: 10% 5% 0;
+  }
+  .lifestyle .grid-7 .title {
+    font-size: 25px;
+  }
+  .lifestyle .grid-7 .description {
+    margin-top: 5%;
+  }
+  .lifestyle .grid-7 .icon {
+    display: none;
+  }
+  .lifestyle .grid-8 .wrapper {
+    padding: 15%;
+  }
+  .banner {
+    height: 300px;
+  }
+  .banner-content {
+    padding: 0 10%;
+  }
+  .banner-title {
+    font-size: 25px;
+  }
+  .banner-subtitle {
+    font-size: 14px;
+    width: 100%;
+  }
+  .footer .wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-block {
+    flex-basis: 100%;
+  }
+  .footer-block:nth-child(2) {
+    margin-left: 0;
+    margin-top: 10%;
+  }
+  .footer-social {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 10%;
+    flex-basis: 100%;
+  }
+  .footer-forms {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .footer-forms fieldset {
+    width: 100%;
+  }
+  .footer-forms .form {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .footer-forms .button {
+    width: 100%;
+  }
 }
