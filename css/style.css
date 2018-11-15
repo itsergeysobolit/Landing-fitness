@@ -670,7 +670,7 @@ body * {
 .footer {
   margin: 0;
   padding-top: 5%;
-  background-color: #000;
+  background-color: #0d1119;
   padding-bottom: 15%;
 }
 
@@ -772,6 +772,7 @@ body * {
 }
 
 .footer-forms .form {
+  width: 201px;
   border: 1px solid #0d1119;
   padding: 18px 109px 20px 22px;
   font-family: 'proxima-nova', sans-serif;
@@ -780,6 +781,10 @@ body * {
   border-radius: 3px;
   margin-left: 3px;
   transition: all .5s ease;
+}
+
+.footer-forms .form:nth-child(2) {
+  width: 340px;
 }
 
 .footer-forms .form:focus {
@@ -798,8 +803,13 @@ body * {
   border-radius: 3px;
   background-color: #a2ca28;
   margin-left: 6px;
-  padding: 20px 40px 18px 32px;
+  padding: 20px 20px 18px 32px;
   transition: all .5s ease;
+  width: 182px;
+}
+
+.footer-forms .button-icon {
+  margin-left: 9px;
 }
 
 .footer-forms .button:hover {
