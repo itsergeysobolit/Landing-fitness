@@ -242,6 +242,10 @@
     .header {
         text-align: center;
 
+        .wrapper {
+            display: block;
+        }
+
         &-top {
             flex-wrap: wrap;
             justify-content: center;
@@ -262,7 +266,8 @@
         }
 
         &-bottom {
-            left: 7%;
+            left: 10%;
+            bottom: 10%;
         }
 
         &-title {
@@ -492,3 +497,12 @@
         }
     }
 }
+
+// &-bottom {
+//     left: 40%;
+//     bottom: 10%;
+// }
+
+// .wrapper {
+//     display: block;
+// }

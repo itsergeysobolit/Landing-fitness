@@ -971,6 +971,9 @@ body * {
   .header {
     text-align: center;
   }
+  .header .wrapper {
+    display: block;
+  }
   .header-top {
     flex-wrap: wrap;
     justify-content: center;
@@ -987,7 +990,8 @@ body * {
     margin-left: 0;
   }
   .header-bottom {
-    left: 7%;
+    left: 10%;
+    bottom: 10%;
   }
   .header-title {
     font-size: 30px;
