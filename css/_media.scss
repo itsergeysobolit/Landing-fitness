@@ -97,6 +97,13 @@
             width: 70%;
         }
     }
+
+    .footer {
+
+        .form {
+            width: 30%;
+        }
+    }
 }
 
 @media only screen  and (min-width:768px) and (max-width:849px) {
@@ -217,6 +224,10 @@
             .form {
                 width: 100%;
                 margin-bottom: 5%;
+
+                &:nth-child(2) {
+                    width: 100%;
+                }
             }
 
             .button {
@@ -366,7 +377,7 @@
             grid-column-end: 2;
 
             .wrapper {
-                padding: 20% 5% 0;
+                padding: 12% 5% 0;
             }
 
             .title {
@@ -465,6 +476,10 @@
             .form {
                 width: 100%;
                 margin-bottom: 5%;
+
+                &:nth-child(2) {
+                    width: 100%;
+                }
             }
 
             .button {
