@@ -987,7 +987,10 @@ body * {
     margin-left: 0;
   }
   .header-bottom {
-    left: 0%;
+    left: 7%;
+  }
+  .header-title {
+    font-size: 30px;
   }
   .features .wrapper {
     flex-wrap: wrap;
