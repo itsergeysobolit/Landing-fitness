@@ -786,7 +786,7 @@ body * {
 .footer-forms {
   margin-top: 50px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .footer-forms .form {
