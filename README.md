@@ -10,6 +10,8 @@ Here you can find the original [PSD](http://blazrobar.com/free-psd-website-templ
 
 This project was developed with HTML5, Sass and Gulp.
 
+**[View Live Preview](https://itsergeysobolit.github.io/Landing-fitness/)**
+
 ## Credits:
 
 * [node.js](http://nodejs.org/)
@@ -24,7 +26,7 @@ This project was developed with HTML5, Sass and Gulp.
 * Install all dependencies `$ npm install`
 * `$ gulp`
 
-##Gulp Tasks
+## Gulp Tasks
 
 - `gulp` the default task that builds everything.
 - `gulp-sass` compiles SCSS files into CSS and minify the css.
